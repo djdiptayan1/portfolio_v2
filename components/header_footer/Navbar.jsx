@@ -35,7 +35,7 @@ const navOptions = [
 const moreNavOptions = [
   {
     name: "Resume",
-    url: "/resume",
+    url: LINK_SOURCES.RESUME,
   },
   {
     name: "Certifications",
