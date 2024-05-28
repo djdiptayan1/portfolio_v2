@@ -6,7 +6,7 @@
 import React, { useEffect, useRef, useCallback, useState } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-import { LINK_SOURCES } from "../../config";
+import { LINK_SOURCES } from "../../config/index";
 import SOCIALS from "../../config/socials";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +21,7 @@ const Footer = () => {
     { name: "Projects", url: "/projects" },
     { name: "Experience", url: "/experience" },
     { name: "Contact", url: "/contact" },
-    { name: "Resume", url: "/resume" },
+    { name: "Resume", url: LINK_SOURCES.RESUME },
     { name: "Certifications", url: "/certifications" },
   ];
 
