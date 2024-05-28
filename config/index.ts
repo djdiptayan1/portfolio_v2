@@ -2,8 +2,6 @@
  * Application Configuration
  */
 
-import Testimonials from "../components/landing/Testimonials";
-
 // Dependencies
 
 export const LINK_SOURCES = {
