@@ -11,8 +11,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { LINK_SOURCES } from "../../config/index";
 
-const typewriterOptions= {
-  strings: ["Developer", "Gamer", "Creator", "Freelancer"],
+const typewriterOptions = {
+  strings: ["Developer", "Gamer", "Creator", "Freelancer", "Traveler"],
   loop: true,
   autoStart: true,
   skipAddStyles: true,
