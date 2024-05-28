@@ -89,7 +89,7 @@ const Footer = () => {
               height={100}
               className="h-10 w-10 rounded-full border-2 border-black"
             />
-            Kunal Keshan
+            Diptayan Jash
           </Link>
           <p className="mt-2 font-semibold">
             Gamer 🎮. Creator 🚀. Developer 💻. On a spree of creative
