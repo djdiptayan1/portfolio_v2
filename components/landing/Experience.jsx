@@ -25,6 +25,7 @@ const ExperienceCard = ({
         </p>
         <Link
           href={website}
+          target="_blank"
           className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-full border-2 border-black shadow-3d-small transition-all duration-300 hover:-translate-y-1 hover:shadow-3d"
         >
           <Image
@@ -41,6 +42,7 @@ const ExperienceCard = ({
         <h3 className="text-2xl font-semibold">{position},</h3>
         <Link
           href={website}
+          target="_blank"
           className="text-lg font-semibold underline-offset-2 transition-all duration-300 hover:text-portfolio-accent hover:underline"
         >
           {company}
