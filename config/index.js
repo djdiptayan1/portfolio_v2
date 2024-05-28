@@ -6,17 +6,19 @@
 
 export const LINK_SOURCES = {
   PROFILE_IMAGE:
-    "https://res.cloudinary.com/kunalkeshan/image/upload/v1674944977/Portfolio/profile-pic-kunal-keshan.png",
+    "https://portfoliodata.djdiptayan.in/media/profile_pic.jpeg",
   ART_IMAGE:
     "https://portfoliodata.djdiptayan.in/cover.png",
+  RESUME:
+    "https://portfoliodata.djdiptayan.in/media/resume.pdf",
   EXPERIENCE_API:
     "https://portfolioapi.djdiptayan.in/experiences",
   PROJECTS_API:
     "https://portfolioapi.djdiptayan.in/projects",
   SKILLS_API:
     "https://portfolioapi.djdiptayan.in/skills",
-    SOCIALS_API:
+  SOCIALS_API:
     "https://portfolioapi.djdiptayan.in/socials",
-    TESTIMONIALS_API:
+  TESTIMONIALS_API:
     "https://portfolioapi.djdiptayan.in/testimonials",
 };

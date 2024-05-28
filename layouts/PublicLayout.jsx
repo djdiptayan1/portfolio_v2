@@ -10,9 +10,13 @@ import Footer from "../components/header_footer/Footer";
 const PublicLayout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <div className="">
+        <Navbar />
+      </div>
       <main className="w-full">{children}</main>
-      <Footer />
+      <div className=" pt-24">
+        <Footer />
+      </div>
     </>
   );
 };
