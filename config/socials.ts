@@ -30,21 +30,21 @@ type Socials = Social[];
 const SOCIALS: Socials = [
   {
     name: "instagram",
-    url: "https://instagram.com/kunalkeshan.dev",
+    url: "https://instagram.com/dj_dipt",
     Icon: FaInstagram,
   },
   {
     name: "linkedin",
-    url: "https://linkedin.com/in/kunalkeshan",
+    url: "https://linkedin.com/in/",
     Icon: FaLinkedin,
   },
-  { name: "github", url: "https://github.com/kunalkeshan", Icon: FaGithub },
+  { name: "github", url: "https://github.com/djdiptayan1", Icon: FaGithub },
   {
     name: "twitter",
-    url: "https://twitter.com/_kunalkeshan_",
+    url: "https://twitter.com/diptayan_jash",
     Icon: FaTwitter,
   },
-  { name: "email", url: "hey@kunalkeshan.dev", Icon: FaEnvelope },
+  { name: "email", url: "contact@djdiptayan.in", Icon: FaEnvelope },
 ];
 
 export default SOCIALS;
