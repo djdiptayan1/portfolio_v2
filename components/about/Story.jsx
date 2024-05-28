@@ -1,7 +1,3 @@
-/**
- * About Page - My Story Section
- */
-
 import React from "react";
 import Lottie from "react-lottie-player";
 import Link from "next/link";
@@ -31,7 +27,7 @@ const AboutStory = () => {
             </div>
             <div className="mx-auto mt-8 flex w-full flex-col gap-4 font-semibold text-themes-txt_secondary md:max-w-lg md:text-lg">
                 <p>
-                    <span className="text-5xl font-bold text-black">M</span>y journey as a developer has been driven by a passion for technology and innovation. Currently pursuing a B.Tech in Computer Science and Engineering, I've had the privilege of interning at leading organizations like Samsung and SONY Research India. At Samsung, I developed image duplication methods, enhancing our data analysis processes, while at SONY, I optimized robotic navigation algorithms, improving encoder efficiency by 20%.
+                    <span className="text-5xl font-bold text-black">M</span>y journey as a developer has been driven by a passion for technology and innovation. Currently pursuing a B.Tech in Computer Science and Engineering, I&apos;ve had the privilege of interning at leading organizations like Samsung and SONY Research India. At Samsung, I developed image duplication methods, enhancing our data analysis processes, while at SONY, I optimized robotic navigation algorithms, improving encoder efficiency by 20%.
                 </p>
                 <p>
                     My technical expertise includes developing IoT devices and programming robots for the DD ROBOCON Competition, where our team achieved an impressive AIR 11. Notably, I created the LingoFlow translation system, which was a finalist in the Smart India Hackathon.
@@ -40,7 +36,7 @@ const AboutStory = () => {
                     I am proficient in a range of technologies including Java, Python, C/C++, JavaScript, React, and Flask. My projects, such as building the Altium Workshop website and the Jyotish Chandra Rice Mill website, demonstrate my ability to create efficient, scalable, and user-friendly web applications.
                 </p>
                 <p>
-                    I am passionate about solving real-world problems through technology and am eager to bring my skills and experience to new challenges. Whether it's developing innovative software solutions or working on cutting-edge projects, I am dedicated to making a meaningful impact in the tech industry.
+                    I am passionate about solving real-world problems through technology and am eager to bring my skills and experience to new challenges. Whether it&apos;s developing innovative software solutions or working on cutting-edge projects, I am dedicated to making a meaningful impact in the tech industry.
                 </p>
                 <Link
                     //REPLACE WITH YOUR CONTACT PAGE LINK
