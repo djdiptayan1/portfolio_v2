@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight, FaGithub, FaGlobe, FaSuitcase } from "react-icons/fa";
+import { LINK_SOURCES } from "@/config";
 const ProjectCard = ({
   coverImage,
   color,
@@ -95,7 +96,7 @@ const Portfolio = ({ showTill }) => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('https://portfolioapi.djdiptayan.in/projects');
+        const response = await fetch(LINK_SOURCES.PROJECTS_API);
         const result = await response.json();
         if (result.success) {
           setProjects(result.data);
@@ -133,8 +134,7 @@ const Portfolio = ({ showTill }) => {
       </div>
       {isNotProjectsPage && (
         <Link
-          // Change the href to the correct path
-          href="/#"
+          href="/projects"
           className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-montserrat text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
         >
           <FaSuitcase /> View all projects

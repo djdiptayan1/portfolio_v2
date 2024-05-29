@@ -73,7 +73,7 @@ const About = () => {
         </ul>
         <Link
           // WILL BE CHANGED TO LINK (ABOUT)
-          href="/#"
+          href="/about"
           className="mx-auto mt-8 flex w-fit items-center justify-center gap-2 rounded-xl bg-themes-txt_primary py-6 px-12 font-montserrat font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent lg:mx-0"
         >
           <FaUser /> More about me

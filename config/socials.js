@@ -18,16 +18,9 @@ import {
   FaTelegram,
 } from "react-icons/fa";
 
-export interface Social {
-  name: string;
-  url: string;
-  Icon: IconType;
-}
-
-type Socials = Social[];
 
 // Social Container
-const SOCIALS: Socials = [
+const SOCIALS= [
   {
     name: "instagram",
     url: "https://instagram.com/dj_dipt",
