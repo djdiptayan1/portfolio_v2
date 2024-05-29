@@ -26,6 +26,7 @@ const About = () => {
       transition={{ delay: 0.2, type: "spring" }}
       viewport={{ once: true }}
       className="mx-auto mt-20 grid min-h-screen max-w-7xl scroll-mt-20 grid-cols-1 gap-16 px-5 text-center lg:grid-cols-2 lg:text-left xl:mt-5"
+      id="about"
     >
       <div className="order-last flex w-full items-center justify-center lg:order-none">
         <div className="h-full max-h-[32rem] w-full max-w-lg overflow-hidden rounded-full shadow-3d transition-all duration-300 hover:shadow-3d-hover">
