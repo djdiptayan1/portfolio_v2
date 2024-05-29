@@ -21,4 +21,6 @@ export const LINK_SOURCES = {
     "https://portfolioapi.djdiptayan.in/socials",
   TESTIMONIALS_API:
     "https://portfolioapi.djdiptayan.in/testimonials",
+  CERTIFICATIONS_API:
+    "https://portfolioapi.djdiptayan.in/certifications",
 };

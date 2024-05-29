@@ -80,6 +80,13 @@ const Resume = (props) => {
     fetchExperience();
   }, []);
 
+  // Sort EXPERIENCE array so that currently working positions appear first
+  const sortedExperience = EXPERIENCE.sort((a, b) => {
+    const isPresentA = a.date.end.includes("Present");
+    const isPresentB = b.date.end.includes("Present");
+    return isPresentB - isPresentA;
+  });
+
   return (
     <div className="px-5 mx-auto my-20 max-w-7xl" {...props}>
       <h2 className="text-3xl font-bold text-center">
@@ -87,7 +94,7 @@ const Resume = (props) => {
         <span className="px-1 leading-ti bg-portfolio-main">resume</span>
       </h2>
       <ul className="flex flex-col items-center justify-center w-full gap-8 mx-auto mt-8 mb-16">
-        {EXPERIENCE.map((experience, index) => (
+        {sortedExperience.map((experience, index) => (
           <ResumeCard key={index} {...experience} />
         ))}
       </ul>

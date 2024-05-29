@@ -22,6 +22,8 @@ const Skills = () => {
     fetchSkills();
   }, []);
 
+  const duplicateSkills = skills.concat(skills);
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -32,7 +34,7 @@ const Skills = () => {
     >
       <div className="mx-auto block w-[120%] -translate-x-16 -rotate-[8deg] bg-themes-txt_primary px-10 py-16 text-themes-bg_primary">
         <div className="animate-marquee whitespace-nowrap">
-          {skills.map((skill, index) => (
+          {duplicateSkills.map((skill, index) => (
             <span
               key={skill._id}
               className="mx-10 inline-block h-[60px] max-w-[60px] lg:mx-16"
@@ -44,7 +46,6 @@ const Skills = () => {
                 width={40}
                 height={40}
                 className="h-full w-full object-contain"
-                unoptimized={true}
               />
             </span>
           ))}
