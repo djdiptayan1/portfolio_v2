@@ -76,13 +76,20 @@ const ExperienceSection = () => {
     fetchExperience();
   }, []);
 
+  const sortedExperience = EXPERIENCE.sort((a, b) => {
+    const isPresentA = a.date.end.includes("Present");
+    const isPresentB = b.date.end.includes("Present");
+    return isPresentB - isPresentA;
+  });
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, type: "spring" }}
       viewport={{ once: true }}
-      className="mx-auto mt-20 min-h-screen w-full bg-themes-txt_primary p-5 pb-40"
+      className=" mx-auto mt-20 min-h-screen w-full bg-themes-txt_primary p-5 pb-40"
+      id="experiences"
     >
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 pt-10 text-themes-bg_primary md:grid-cols-2 md:pt-20">
         <div className="w-full">
@@ -98,7 +105,7 @@ const ExperienceSection = () => {
               are also working on improving themselves and putting in their 100%
             </p>
             <Link
-              href="/resume"
+              href="/experiences"
               className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-themes-bg_primary px-8 py-4 font-montserrat text-lg font-semibold text-themes-txt_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent md:w-fit"
             >
               <FaUser /> See full resume
@@ -106,7 +113,7 @@ const ExperienceSection = () => {
           </div>
         </div>
         <div className="flex w-full flex-col gap-8">
-          {EXPERIENCE.slice(0, 4).map((experience, index) => (
+          {sortedExperience.slice(0, 4).map((experience, index) => (
             <ExperienceCard key={index} {...experience} />
           ))}
         </div>
