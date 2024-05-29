@@ -71,6 +71,7 @@ const Intro = () => {
             alt="(/≧▽≦)/"
             width={100}
             height={100}
+            quality={100}
             className="h-auto w-full object-cover"
             unoptimized={true}
             priority

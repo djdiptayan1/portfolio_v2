@@ -13,6 +13,7 @@ import Image from "next/image";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
+import { LINK_SOURCES } from "@/config";
 
 const ProjectsPage = ({ project }) => {
   const {
@@ -64,6 +65,11 @@ const ProjectsPage = ({ project }) => {
                 alt={title}
                 width={100}
                 height={100}
+                quality={100}
+                unoptimized={true}
+                placeholder="blur"
+                blurDataURL={coverImage}
+                loading="lazy"
                 className="h-auto w-full object-contain"
               />
             </div>
@@ -78,6 +84,8 @@ const ProjectsPage = ({ project }) => {
                   alt={title}
                   width={100}
                   height={100}
+                  quality={100}
+                  unoptimized={true}
                   className="h-auto w-full object-contain"
                 />
               </Link>
@@ -107,6 +115,7 @@ const ProjectsPage = ({ project }) => {
                           alt={title}
                           width={100}
                           height={100}
+                          quality={100}
                           className="h-auto w-full object-contain"
                           unoptimized={true}
                         />
@@ -167,7 +176,7 @@ const ProjectsPage = ({ project }) => {
 export default ProjectsPage;
 
 export const getStaticPaths = async () => {
-  const response = await fetch('https://portfolioapi.djdiptayan.in/projects');
+  const response = await fetch(LINK_SOURCES.PROJECTS_API);
   const { data: projects } = await response.json();
 
   const paths = projects.filter((project) => project.feature).map((project) => {
@@ -186,7 +195,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const { projectSlug } = context.params;
-  const response = await fetch(`https://portfolioapi.djdiptayan.in/projects`);
+  const response = await fetch(LINK_SOURCES.PROJECTS_API);
   const { data: projects } = await response.json();
   const project = projects.find((proj) => proj.slug === projectSlug);
 

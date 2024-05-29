@@ -79,6 +79,7 @@ const Testimonials = () => {
                 alt={currentTestimonial.company.name}
                 width={100}
                 height={100}
+                quality={100}
                 className="h-auto w-full max-w-[120px]"
               />
             </div>
@@ -89,6 +90,7 @@ const Testimonials = () => {
               alt={currentTestimonial.name}
               width={100}
               height={100}
+              quality={100}
               className="h-full w-full object-contain"
               unoptimized={true}
             />
