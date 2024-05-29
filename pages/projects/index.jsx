@@ -13,7 +13,7 @@ const ProjectsPage = () => {
   return (
     <>
       <Head>
-        <title>Projects | Diptayan</title>
+        <title>Projects | Diptayan Jash</title>
       </Head>
       <PublicLayout>
         <motion.section
