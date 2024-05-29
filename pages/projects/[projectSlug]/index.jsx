@@ -67,6 +67,9 @@ const ProjectsPage = ({ project }) => {
                 height={100}
                 quality={100}
                 unoptimized={true}
+                placeholder="blur"
+                blurDataURL={coverImage}
+                loading="lazy"
                 className="h-auto w-full object-contain"
               />
             </div>

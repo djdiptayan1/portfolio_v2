@@ -31,6 +31,7 @@ const ProjectCard = ({
               width={100}
               height={100}
               quality={100}
+              unoptimized={true}
               className="h-full w-full object-contain"
             />
           </div>
@@ -83,6 +84,7 @@ const ProjectCard = ({
           width={100}
           height={100}
           quality={100}
+          unoptimized={true}
           className="h-auto w-full max-w-[160px] object-contain drop-shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-2xl md:max-w-xs"
         />
       </div>

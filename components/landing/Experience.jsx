@@ -34,6 +34,7 @@ const ExperienceCard = ({
             width={100}
             height={100}
             quality={100}
+            unoptimized={true}
             className="h-auto w-full object-contain"
           />
         </Link>
