@@ -20,7 +20,7 @@ const navOptions = [
   },
   {
     name: "About",
-    url: "/about",
+    url: "/#about",
   },
   {
     name: "Projects",
