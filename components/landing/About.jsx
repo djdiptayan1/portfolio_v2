@@ -34,6 +34,7 @@ const About = () => {
             alt="Profile Picture"
             width={100}
             height={100}
+            quality={100}
             className="h-auto w-full object-cover"
             unoptimized
           />

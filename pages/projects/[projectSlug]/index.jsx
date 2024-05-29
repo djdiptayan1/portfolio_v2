@@ -65,6 +65,8 @@ const ProjectsPage = ({ project }) => {
                 alt={title}
                 width={100}
                 height={100}
+                quality={100}
+                unoptimized={true}
                 className="h-auto w-full object-contain"
               />
             </div>
@@ -79,6 +81,8 @@ const ProjectsPage = ({ project }) => {
                   alt={title}
                   width={100}
                   height={100}
+                  quality={100}
+                  unoptimized={true}
                   className="h-auto w-full object-contain"
                 />
               </Link>
@@ -108,6 +112,7 @@ const ProjectsPage = ({ project }) => {
                           alt={title}
                           width={100}
                           height={100}
+                          quality={100}
                           className="h-auto w-full object-contain"
                           unoptimized={true}
                         />
