@@ -22,7 +22,7 @@ const AboutIntro = () => {
       </p>
       <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center gap-4 md:max-w-sm md:flex-row">
         <Link
-          href="/"
+          href="/contact"
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
         >
           <FaEnvelope /> Get in touch
