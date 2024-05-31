@@ -110,7 +110,7 @@ const Navbar = () => {
         <span className="flex items-center justify-center gap-2">
           <Link
             //WILL BE UPDATED WITH THE CORRECT LINK (CONTACT)
-            href="/#"
+            href="/contact"
             className="flex h-12 w-12 items-center justify-center rounded-xl bg-black text-xl text-white transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main"
           >
             <HiOutlineEnvelope />
