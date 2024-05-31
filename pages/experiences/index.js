@@ -8,6 +8,7 @@ const index = () => {
         <>
             <Head>
                 <title>Experiences - Diptayan Jash</title>
+                <meta name="title" content="Experiences - Diptayan Jash" />
             </Head>
             <PublicLayout>
                 <div className=' pt-20'>

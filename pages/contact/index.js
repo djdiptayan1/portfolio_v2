@@ -32,6 +32,7 @@ const index = () => {
         <>
             <Head>
                 <title>Contact | Diptayan Jash</title>
+                <meta name="title" content="Contact | Diptayan Jash" />
             </Head>
             <PublicLayout>
                 <motion.section
