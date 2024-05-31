@@ -19,7 +19,7 @@ const Footer = () => {
     { name: "Home", url: "/" },
     { name: "About", url: "/about" },
     { name: "Projects", url: "/projects" },
-    { name: "Experience", url: "/experience" },
+    { name: "Experience", url: "/experiences" },
     { name: "Contact", url: "/contact" },
     { name: "Resume", url: LINK_SOURCES.RESUME },
     { name: "Certifications", url: "/certifications" },
