@@ -40,7 +40,7 @@ const AboutStory = () => {
                 </p>
                 <Link
                     //REPLACE WITH YOUR CONTACT PAGE LINK
-                    href="/#"
+                    href="/contact"
                     className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent md:w-fit"
                 >
                     <FaEnvelope /> Get in touch
