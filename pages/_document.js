@@ -26,8 +26,8 @@ export default function Document() {
         <meta name="google-site-verification" content="google-site-verification= " />
         <meta property="og:site_name" content="Diptayan Jash - Web Developer and Student Portfolio" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://gui.djdiptayan.in/" />
-        <link rel="canonical" href="https://gui.djdiptayan.in/" />
+        <meta property="og:url" content="https://www.djdiptayan.in/" />
+        <link rel="canonical" href="https://www.djdiptayan.in/" />
 
         <meta property="image" content="../public/favicon.ico" />
         {/* <meta name="title" content="Diptayan Jash - Web Developer and Student Portfolio" /> */}
@@ -92,7 +92,7 @@ export default function Document() {
             "name": "Diptayan Jash",
             "jobTitle": "Web Developer and Student",
             "email": "mailto:djdiptayan1@gmail.com",
-            "url": "https://gui.djdiptayan.in/",
+            "url": "https://www.djdiptayan.in/",
             "image": "../public/favicon.ico",
             "sameAs": [
               "https://www.instagram.com/dj_dipt/",
