@@ -14,6 +14,7 @@ const ProjectsPage = () => {
     <>
       <Head>
         <title>Projects | Diptayan Jash</title>
+        <meta name="title" content="Projects | Diptayan Jash" />
       </Head>
       <PublicLayout>
         <motion.section

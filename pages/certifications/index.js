@@ -34,6 +34,7 @@ const CertificationsPage = () => {
         <>
             <Head>
                 <title>Certifications | Diptayan Jash</title>
+                <meta name="title" content="Certifications | Diptayan Jash" />
             </Head>
             <PublicLayout>
                 <motion.section

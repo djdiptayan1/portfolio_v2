@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>Diptayan Jash | Portfolio</title>
-        <meta name="title" content="Diptayan Jash" />
+        <meta name="title" content="Diptayan Jash - Web Developer and Student Portfolio" />
         <meta name="description" content="Dive into the diverse portfolio of Diptayan Jash, a proficient web and app developer with a strong academic background. With expertise in languages like Java, C, C++, Python, JavaScript, TypeScript, and databases like Firebase and MongoDB, he excels in server-side development. His work also extends to the intriguing fields of robotics and embedded systems. Discover his journey and accomplishments." />
         <meta property="icon" content="../public/android-chrome-512x512.png" />
       </Head>

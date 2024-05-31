@@ -13,7 +13,8 @@ const index = () => {
     return (
         <>
             <Head>
-                <title>About me</title>
+                <title>About me | Diptayan Jash</title>
+                <meta name="title" content="About me | Diptayan Jash" />
                 <meta name="description" content="About me page" />
             </Head>
             <PublicLayout>
