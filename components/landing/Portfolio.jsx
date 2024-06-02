@@ -102,8 +102,9 @@ const Portfolio = ({ showTill }) => {
       try {
         const response = await fetch(LINK_SOURCES.PROJECTS_API);
         const result = await response.json();
+        const result_sorted = result.data.sort((a, b) => a.priority - b.priority);
         if (result.success) {
-          setProjects(result.data);
+          setProjects(result_sorted);
         }
       } catch (error) {
         console.error('Error fetching skills:', error);
