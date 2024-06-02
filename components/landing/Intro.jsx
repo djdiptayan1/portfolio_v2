@@ -50,14 +50,14 @@ const Intro = () => {
         <div className="mt-8 flex flex-col gap-4 md:mt-16 md:flex-row">
           <Link
             //  WILL BE UPDATED WITH THE CORRECT LINK (CONTACT)
-            href="/#"
+            href="/contact"
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-themes-txt_primary py-4 text-center font-montserrat font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main md:w-1/2"
           >
             <FaEnvelope /> Get in touch
           </Link>
           <Link
             //  WILL BE UPDATED WITH THE CORRECT LINK (PORTFOLIO)
-            href="/#"
+            href="/projects"
             className="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-black bg-white py-4 text-center font-montserrat font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-themes-txt_primary hover:text-themes-bg_primary md:w-1/2"
           >
             <FaSuitcase /> View portfolio
