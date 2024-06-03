@@ -20,7 +20,7 @@ import {
 
 
 // Social Container
-const SOCIALS= [
+const SOCIALS = [
   {
     name: "instagram",
     url: "https://instagram.com/dj_dipt",
@@ -28,7 +28,7 @@ const SOCIALS= [
   },
   {
     name: "linkedin",
-    url: "https://linkedin.com/in/",
+    url: "https://www.linkedin.com/in/diptayan-jash-63496b214/",
     Icon: FaLinkedin,
   },
   { name: "github", url: "https://github.com/djdiptayan1", Icon: FaGithub },
