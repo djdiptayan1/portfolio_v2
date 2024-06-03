@@ -30,7 +30,7 @@ const ValueCard = ({ image, title, description }) => {
 
 const ValuesSection = () => {
   return (
-    <div className="mx-auto mt-20 max-w-7xl px-5 lg:mt-40">
+    <div className="mx-auto mt-20 max-w-7xl px-5 lg:mt-40 pb-4">
       <h2 className="text-center text-2xl font-bold">
         My core values, personally and professionally
       </h2>
