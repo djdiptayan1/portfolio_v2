@@ -3,13 +3,13 @@ import Head from "next/head";
 import PublicLayout from '@/layouts/PublicLayout';
 
 import AboutIntro from '@/components/about/Intro';
-import AboutStory from '@/components/about/Story';
+// import AboutStory from '@/components/about/Story';
 import Resume from '@/components/about/Resume';
 import SkillsInText from '@/components/about/SkillsInText';
 import ValuesSection from '@/components/about/Values';
 
 
-const index = () => {
+const AboutPage = () => {
     return (
         <>
             <Head>
@@ -18,9 +18,10 @@ const index = () => {
                 <meta name="description" content="About me page" />
             </Head>
             <PublicLayout>
-                <div className=' pt-36'>
+                <div className='pt-36'>
+                    hiii
                     <AboutIntro />
-                    <AboutStory />
+                    {/* <AboutStory /> */}
                     <Resume />
                     <SkillsInText />
                     <ValuesSection />
@@ -30,4 +31,4 @@ const index = () => {
     )
 }
 
-export default index
+export default AboutPage

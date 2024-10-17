@@ -11,7 +11,6 @@ import PublicLayout from "../../../layouts/PublicLayout";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 import { LINK_SOURCES } from "@/config";
 

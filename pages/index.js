@@ -5,7 +5,6 @@ import Skills from "../components/landing/Skills";
 import About from "../components/landing/About";
 import Portfolio from "../components/landing/Portfolio";
 import ExperienceSection from "../components/landing/Experience";
-import Testimonials from "../components/landing/Testimonials";
 
 import PublicLayout from "../layouts/PublicLayout";
 
@@ -24,7 +23,6 @@ export default function Home() {
         <About />
         <Portfolio showTill={2} />
         <ExperienceSection />
-        {/* <Testimonials /> */}
       </PublicLayout>
     </>
   );
