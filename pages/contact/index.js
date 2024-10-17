@@ -5,7 +5,7 @@ import PublicLayout from '@/layouts/PublicLayout'
 import Contact from '@/components/contact/Contact'
 import FrequentlyAskedQuestions from '@/components/contact/FrequentlyAskedQuestions'
 
-const index = () => {
+const contactPage = () => {
     const faqs = [
         {
             question: "What services do you offer?",
@@ -49,4 +49,4 @@ const index = () => {
     )
 }
 
-export default index
+export default contactPage

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import PublicLayout from '@/layouts/PublicLayout'
 import Resume from '@/components/about/Resume'
 
-const index = () => {
+const experiencePage = () => {
     return (
         <>
             <Head>
@@ -19,4 +19,4 @@ const index = () => {
     )
 }
 
-export default index
+export default experiencePage
