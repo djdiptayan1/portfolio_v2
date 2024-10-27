@@ -6,7 +6,7 @@
 
 export const LINK_SOURCES = {
   PROFILE_IMAGE:
-    "https://portfoliodata.djdiptayan.in/profile_pics/profile_pic.jpeg",
+    "https://portfoliodata.djdiptayan.in/profile_pics/dj.png",
   ART_IMAGE:
     "https://portfoliodata.djdiptayan.in/profile_pics/cover.png",
   RESUME:

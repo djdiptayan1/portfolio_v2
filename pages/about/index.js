@@ -19,7 +19,6 @@ const AboutPage = () => {
             </Head>
             <PublicLayout>
                 <div className='pt-36'>
-                    hiii
                     <AboutIntro />
                     {/* <AboutStory /> */}
                     <Resume />
