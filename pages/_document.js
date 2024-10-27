@@ -29,7 +29,7 @@ export default function Document() {
         <meta property="og:url" content="https://www.djdiptayan.in/" />
         <link rel="canonical" href="https://www.djdiptayan.in/" />
 
-        <meta property="image" content="../public/favicon.ico" />
+        <meta property="image" content="../public/dj.png" />
         {/* <meta name="title" content="Diptayan Jash - Web Developer and Student Portfolio" /> */}
         {/* <meta property="title" content="Diptayan Jash - Web Developer and Student Portfolio" /> */}
         {/* <title>Diptayan Jash - Web Developer and Student Portfolio</title> */}
@@ -43,7 +43,7 @@ export default function Document() {
         <meta property="keywords" content="Diptayan Jash, Web Developer, Designer, Portfolio, Robotics" />
         <meta name="author" content="Diptayan Jash" />
         <meta httpEquiv="Content-Language" content="en-US" />
-        <meta property="og:image" content="../public/favicon.ico" />
+        <meta property="og:image" content="../public/dj.png" />
         <meta property="og:profile" content="https://www.instagram.com/dj_dipt/" />
         <meta property="profile:username" content="dj_dipt" />
         <meta property="og:profile" content="https://github.com/djdiptayan1" />
@@ -65,10 +65,10 @@ export default function Document() {
         {/* <!-- Google / Search Engine Tags --> */}
         <meta itemProp="name" content="Diptayan | Portfolio" />
         <meta itemProp="description" content="Dive into the diverse portfolio of Diptayan Jash, a proficient web and app developer with a strong academic background. With expertise in languages like Java, C, C++, Python, JavaScript, TypeScript, and databases like Firebase and MongoDB, he excels in server-side development. His work also extends to the intriguing fields of robotics and embedded systems. Discover his journey and accomplishments." />
-        <meta itemProp="image" content="../public/favicon.ico" />
+        <meta itemProp="image" content="../public/dj.png" />
 
         {/* <!-- Apple Touch Icon --> */}
-        <link rel="apple-touch-icon" href="../public/favicon.ico" />
+        <link rel="apple-touch-icon" href="../public/dj.png" />
 
         {/* <!-- Twitter Card --> */}
         <meta name="twitter:card" content="summary" />
@@ -93,7 +93,7 @@ export default function Document() {
             "jobTitle": "Web Developer and Student",
             "email": "mailto:djdiptayan1@gmail.com",
             "url": "https://www.djdiptayan.in/",
-            "image": "../public/favicon.ico",
+            "image": "../public/dj.png",
             "sameAs": [
               "https://www.instagram.com/dj_dipt/",
               "https://github.com/djdiptayan1"
