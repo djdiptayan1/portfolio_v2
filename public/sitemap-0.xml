@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://djdiptayan.in</loc><lastmod>2024-10-17T12:25:05.679Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/about</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/certifications</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/contact</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/experiences</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/projects</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/projects/jcrm-website</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/projects/lingoflow</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/projects/chat-application</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/projects/altium-workshop</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/projects/gemini</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://djdiptayan.in/projects/beacon</loc><lastmod>2024-10-17T12:25:05.680Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in</loc><lastmod>2025-05-10T18:21:28.298Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/about</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/certifications</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/contact</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/experiences</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/projects</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/projects/chat-application</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/projects/jcrm-website</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/projects/altium-workshop</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/projects/lingoflow</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/projects/gemini</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/projects/beacon</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://djdiptayan.in/projects/agamotto</loc><lastmod>2025-05-10T18:21:28.299Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

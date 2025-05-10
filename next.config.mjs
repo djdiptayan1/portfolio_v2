@@ -8,7 +8,17 @@ const nextConfig = {
         hostname: "**"
       }
     ]
+  },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'http://20.193.252.127:8080/:path*',
+        permanent: false
+      }
+    ]
   }
+
 };
 
 export default nextConfig;
