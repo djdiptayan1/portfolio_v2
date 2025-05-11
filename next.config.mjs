@@ -9,7 +9,7 @@ const nextConfig = {
       }
     ]
   },
-  async redirects() {
+  async rewrites() {
     return [
       {
         source: '/shelfspace/api/:path*',
