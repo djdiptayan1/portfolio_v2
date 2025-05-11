@@ -9,12 +9,11 @@ const nextConfig = {
       }
     ]
   },
-  async redirects() {
+  async rewrites() {
     return [
       {
         source: '/shelfspace/api/:path*',
         destination: 'http://20.193.252.127:8080/:path*',
-        permanent: false
       }
     ]
   }
