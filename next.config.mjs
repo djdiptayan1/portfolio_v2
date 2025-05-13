@@ -16,7 +16,7 @@ const nextConfig = {
         destination: 'http://20.193.252.127:8080/:path*',
       },
       {
-        source: '/trackmoji/api/:path*',
+        source: '/trackmoji/:path*',
         destination: 'http://20.193.252.127:3010/:path*',
       }
     ]
