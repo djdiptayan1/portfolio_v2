@@ -175,39 +175,98 @@ const ProjectsPage = ({ project }) => {
 export default ProjectsPage;
 
 export const getStaticPaths = async () => {
-  const response = await fetch(LINK_SOURCES.PROJECTS_API);
-  const { data: projects } = await response.json();
+  try {
+    // Fetch projects data
+    const response = await fetch(LINK_SOURCES.PROJECTS_API);
 
-  const paths = projects.filter((project) => project.feature).map((project) => {
+    // Check if response is successful
+    if (!response.ok) {
+      console.error(`Failed to fetch projects: ${response.status} ${response.statusText}`);
+      return { paths: [], fallback: 'blocking' };
+    }
+
+    // Parse JSON response with error handling
+    let projects = [];
+    try {
+      const jsonData = await response.json();
+      if (jsonData && jsonData.success && Array.isArray(jsonData.data)) {
+        projects = jsonData.data;
+      } else {
+        console.error('Invalid data structure from API:', JSON.stringify(jsonData).slice(0, 200));
+      }
+    } catch (error) {
+      console.error('Error parsing JSON in getStaticPaths:', error);
+      return { paths: [], fallback: 'blocking' };
+    }
+
+    // Generate paths for featured projects
+    const paths = projects
+      .filter(project => project && project.feature)
+      .map(project => ({
+        params: {
+          projectSlug: project.slug,
+        },
+      }));
+
     return {
-      params: {
-        projectSlug: project.slug,
-      },
+      paths,
+      fallback: 'blocking', // Changed from false to blocking for better error handling
     };
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
+  } catch (error) {
+    console.error('Error in getStaticPaths:', error);
+    return { paths: [], fallback: 'blocking' };
+  }
 };
 
 export const getStaticProps = async (context) => {
-  const { projectSlug } = context.params;
-  const response = await fetch(LINK_SOURCES.PROJECTS_API);
-  const { data: projects } = await response.json();
-  const project = projects.find((proj) => proj.slug === projectSlug);
+  try {
+    const { projectSlug } = context.params;
 
-  if (!project || !project.feature) {
+    // Fetch projects data
+    const response = await fetch(LINK_SOURCES.PROJECTS_API);
+
+    // Check if response is successful
+    if (!response.ok) {
+      console.error(`Failed to fetch projects: ${response.status} ${response.statusText}`);
+      return {
+        notFound: true, // Return 404 page
+      };
+    }
+
+    // Parse JSON response with error handling
+    let projects = [];
+    try {
+      const jsonData = await response.json();
+      if (jsonData && jsonData.success && Array.isArray(jsonData.data)) {
+        projects = jsonData.data;
+      } else {
+        console.error('Invalid data structure from API:', JSON.stringify(jsonData).slice(0, 200));
+        return { notFound: true };
+      }
+    } catch (error) {
+      console.error('Error parsing JSON in getStaticProps:', error);
+      return { notFound: true };
+    }
+
+    // Find the specific project by slug
+    const project = projects.find(proj => proj.slug === projectSlug);
+
+    // Handle case when project is not found or not featured
+    if (!project || !project.feature) {
+      return {
+        notFound: true, // Return 404 page instead of redirecting
+      };
+    }
+
     return {
-      redirect: {
-        destination: "/projects",
-        permanent: false,
+      props: {
+        project,
       },
+      // Revalidate pages every hour
+      revalidate: 3600,
     };
+  } catch (error) {
+    console.error('Error in getStaticProps:', error);
+    return { notFound: true };
   }
-
-  return {
-    props: { project },
-  };
 };

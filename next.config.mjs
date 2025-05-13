@@ -13,11 +13,11 @@ const nextConfig = {
     return [
       {
         source: '/shelfspace/api/:path*',
-        destination: 'http://20.193.252.127:8080/:path*',
+        destination: `http://${process.env.NEXT_PRIVATE_AZURE_ADDRESS}:8080/:path*`,
       },
       {
         source: '/trackmoji/:path*',
-        destination: 'http://20.193.252.127:3010/:path*',
+        destination: `http://${process.env.NEXT_PRIVATE_AZURE_ADDRESS}:3010/:path*`,
       }
     ]
   }
