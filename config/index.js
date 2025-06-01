@@ -10,7 +10,7 @@ export const LINK_SOURCES = {
   ART_IMAGE:
     "https://portfoliodata.djdiptayan.in/profile_pics/cover.png",
   RESUME:
-    "https://portfoliodata.djdiptayan.in/media/resume.pdf",
+    "https://portfoliodata.djdiptayan.in/resume.pdf",
   EXPERIENCE_API:
     "https://portfolioapi.djdiptayan.in/experiences",
   PROJECTS_API:
