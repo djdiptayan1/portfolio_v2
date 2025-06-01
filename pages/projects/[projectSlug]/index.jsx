@@ -37,13 +37,13 @@ const ProjectsPage = ({ project }) => {
         <meta name="description" content={description} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={coverImage} />
+        {coverImage && <meta property="og:image" content={coverImage} />}
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="diptayanjash" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={coverImage} />
+        {coverImage && <meta name="twitter:image" content={coverImage} />}
       </Head>
       <PublicLayout>
         <motion.section
@@ -59,20 +59,26 @@ const ProjectsPage = ({ project }) => {
               className="flex w-full items-center justify-center rounded-xl border-3 p-10"
               style={{ backgroundColor: color }}
             >
-              <Image
-                src={coverImage}
-                alt={title}
-                width={100}
-                height={100}
-                quality={100}
-                unoptimized={true}
-                placeholder="blur"
-                blurDataURL={coverImage}
-                loading="lazy"
-                className="h-auto w-full object-contain"
-              />
+              {coverImage ? (
+                <Image
+                  src={coverImage}
+                  alt={title}
+                  width={100}
+                  height={100}
+                  quality={100}
+                  unoptimized={true}
+                  placeholder="blur"
+                  blurDataURL={coverImage}
+                  loading="lazy"
+                  className="h-auto w-full object-contain"
+                />
+              ) : (
+                <div className="h-40 w-full flex items-center justify-center text-gray-500">
+                  No image available
+                </div>
+              )}
             </div>
-            {website && (
+            {website && logo && (
               <Link
                 href={website}
                 target="_blank"
@@ -100,25 +106,27 @@ const ProjectsPage = ({ project }) => {
               <p className="mt-4 text-themes-txt_secondary md:text-lg lg:text-xl">
                 {motivation}
               </p>
-              {images && (
+              {images && images.length > 0 && (
                 <>
                   <h2 className="mt-8 text-2xl font-bold lg:text-4xl">Images</h2>
                   <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {images.map((image, index) => (
-                      <div
-                        key={index}
-                        className="w-full overflow-hidden hover:-translate-y-1 rounded-xl border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d"
-                      >
-                        <Image
-                          src={image}
-                          alt={title}
-                          width={100}
-                          height={100}
-                          quality={100}
-                          className="h-auto w-full object-contain"
-                          unoptimized={true}
-                        />
-                      </div>
+                      image && (
+                        <div
+                          key={index}
+                          className="w-full overflow-hidden hover:-translate-y-1 rounded-xl border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d"
+                        >
+                          <Image
+                            src={image}
+                            alt={title}
+                            width={100}
+                            height={100}
+                            quality={100}
+                            className="h-auto w-full object-contain"
+                            unoptimized={true}
+                          />
+                        </div>
+                      )
                     ))}
                   </div>
                 </>
