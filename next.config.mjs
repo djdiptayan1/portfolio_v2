@@ -18,6 +18,10 @@ const nextConfig = {
       {
         source: '/trackmoji/:path*',
         destination: `http://${process.env.NEXT_PRIVATE_AZURE_ADDRESS}:3010/:path*`,
+      },
+      {
+        source: '/getrecap',
+        destination: "https://apps.apple.com/in/app/recap-every-memory-matters/id6743312643",
       }
     ]
   }
