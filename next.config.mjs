@@ -26,6 +26,7 @@ const nextConfig = {
       {
         source: '/getrecap',
         destination: "https://apps.apple.com/in/app/recap-every-memory-matters/id6743312643",
+        permanent: true,
       }
     ];
   }
