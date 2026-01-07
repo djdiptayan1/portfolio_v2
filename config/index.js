@@ -10,17 +10,17 @@ export const LINK_SOURCES = {
   ART_IMAGE:
     "https://portfoliodata.djdiptayan.in/profile_pics/cover.png",
   RESUME:
-    "https://portfoliodata.djdiptayan.in/resume.pdf",
+    "https://drive.google.com/file/d/1NCvtmOL3SIrex8ti8QusJqL4zjUAszUG/view",
   EXPERIENCE_API:
-    "https://portfolioapi.djdiptayan.in/experiences",
+    "https://portfolioapi.djdiptayan.in/api/experiences",
   PROJECTS_API:
-    "https://portfolioapi.djdiptayan.in/projects",
+    "https://portfolioapi.djdiptayan.in/api/projects",
   SKILLS_API:
-    "https://portfolioapi.djdiptayan.in/skills",
+    "https://portfolioapi.djdiptayan.in/api/skills",
   SOCIALS_API:
-    "https://portfolioapi.djdiptayan.in/socials",
+    "https://portfolioapi.djdiptayan.in//api/socials",
   TESTIMONIALS_API:
-    "https://portfolioapi.djdiptayan.in/testimonials",
+    "https://portfolioapi.djdiptayan.in/api/testimonials",
   CERTIFICATIONS_API:
-    "https://portfolioapi.djdiptayan.in/certifications",
+    "https://portfolioapi.djdiptayan.in/api/certifications",
 };
